@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Oswald');
+/*  This is a comment! */
+
+/*  CSS Syntax:
+
+selector {
+  property: value;
+  property: value;
+  property: value;
+}
+
+*/
+
+/* Type selector */
+
+/* select all p (paragraph) elements */
+p {
+  font-size: 16px; /* 16 px, ?pt, 100%, 1em */
+  line-height: 1.5em;
+}
+
+figcaption {
+  /* font-weight: normal;
+  font-size: 0.75em;
+  line-height: 1.5em;
+  font-family: Georgia, 'Times New Roman', serif; */
+  font: normal 0.75em/1.5em 'Oswald', sans-serif;
+  /* color: purple; */
+  /* color: rgba(100, 25, 150, 0.9); */
+  /* color: #777 */
+  color: rgba(211, 160, 44, 0.9);
+  /* 211	160	44 <-- holding cmd shift C copies the code from DCM */
+}
+
+/* Class selector */
+.milk-text {
+  /* This will select elements with class="milk-text" */
+  font: bold 2.6em 'Dosis', sans-serif;
+  color: white;
+  text-shadow: 0 2px 3px #000; /* horizontal, vertical, radius, color */
+}
+
+/* ID selector can only be applied to one element per page */
+#logo {
+  /* Select elements with the ID 'logo' */
+  background-color: aqua;
+}
+
+/* Descendent selector */
+#logo h1 {
+  /* selects <h1> if inside element with id of logo */
+  font-family: 'Dosis', sans-serif;
+}
+
+#logo h2 {
+  /* selects <h1> if inside element with id of logo */
+  font-family: 'Oswald', sans-serif;
+}
+
+/* Pseudo Selector */
+#details a:visited,
+#details a:link {
+  /* this will look for the details section ID, then inside look for all a tags.  of the a tags we are going to be setting any links. (ie unclicked) */
+  color: red;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: blue;
+}
